@@ -1,0 +1,213 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+#header {
+    background-color: black;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    margin-left: 19vw;
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+
+    pointer-events: none;
+}
+
+#hero {
+    background-color: #f1e7e7;
+    background-image: url("/images/homepage_background.png");
+    background-size: 100vw;
+    background-attachment: fixed;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+#hero h1 {
+    color: #fff;
+    text-align: center;
+    width: 80vw;
+
+    font-size: 130px;
+    word-wrap: break-word;
+
+    text-indent: 2.7em;
+    transform: translate(-75px, 0px);
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    text-shadow: 0 0 50px #000;
+}
+
+#hero button {
+    display: block;
+    width: 30%;
+    align-content: center;
+    padding: 10px 0 10px;
+
+    color: #fff;
+    background-color: #00000055;
+    border: 1px solid #fff;
+    border-radius: 35px;
+
+    text-align: center;
+    font-size: 32px;
+
+    transition: all 0.5s;
+
+    margin: 0 auto 50px auto;
+
+    box-shadow: 0 0 50px #000;
+}
+
+#hero button:hover {
+    background: #000000aa;
+}
+
+#footer {
+    background-color: black;
+
+    width: 100%;
+    height: 530px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    background-color: #00000088;
+
+    transition: all 0.1s ease-out;
+}
+
+.modal * {
+    color: white;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.05s ease-in-out;
+}
+
+.modalContent {
+    width: 40%;
+
+    margin: 5% auto auto auto;
+    padding: 25px;
+
+    background-color: #151515;
+    border: 1px solid #888;
+
+    display: block;
+}
+
+.modalClose {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.modalClose:hover, .modalClose:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 25px 0;
+}
+
+.modalContent input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #494949;
+}
+
+.modalContent input:focus {
+    background-color: #131313;
+    outline: none;
+}
+
+.modalContent button {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+
+    float: left;
+
+}
+
+.modalContent button:hover {
+    opacity: 1;
+}
+
+.modalContent .modalSubmit {
+    background-color: #D94C2C;
+    color: white;
+
+    width: 80%;
+}
+
+.modalContent .modalCancel {
+    background-color: #730a01;
+    color: white;
+
+    width: 20%;
+}
+
+.modalButtons::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#createError, #joinError {
+    color: red;
+    font-size: 16px;
+}

@@ -1,0 +1,20 @@
+<rooms>
+  <room code="nathansroom" password="$2b$10$y41qFaDHCcE/CXCQmVs6A.onckRC1Fwvq.b8TsOlZ1YADCiOg4pkS">
+    <form name="" other="">
+      <event start="2022-08-03T14:00:00.000Z" end="2022-08-06T14:00:00.000Z"/>
+      <event start="2022-08-06T14:00:00.000Z" end="2022-08-09T14:00:00.000Z"/>
+      <event start="2022-08-09T20:30:00.000Z" end="2022-08-10T05:00:00.000Z"/>
+      <event start="2022-08-11T00:30:00.000Z" end="2022-08-11T08:30:00.000Z"/>
+      <event start="2022-08-11T21:00:00.000Z" end="2022-08-12T05:00:00.000Z"/>
+      <event start="2022-08-21T14:00:00.000Z" end="2022-08-22T14:00:00.000Z"/>
+    </form>
+    <form name="" other="">
+      <event start="2022-08-20T14:00:00.000Z" end="2022-08-24T14:00:00.000Z"/>
+      <event start="2022-07-31T14:00:00.000Z" end="2022-08-01T14:00:00.000Z"/>
+      <event start="2022-08-07T15:00:00.000Z" end="2022-08-08T03:30:00.000Z"/>
+      <event start="2022-08-08T23:00:00.000Z" end="2022-08-09T02:30:00.000Z"/>
+      <event start="2022-08-09T14:00:00.000Z" end="2022-08-09T17:00:00.000Z"/>
+      <event start="2022-08-11T20:00:00.000Z" end="2022-08-12T04:30:00.000Z"/>
+    </form>
+  </room>
+</rooms>

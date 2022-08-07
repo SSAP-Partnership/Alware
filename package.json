@@ -1,0 +1,26 @@
+{
+  "name": "alware",
+  "description": "The future of meeting scheduling (not malware)",
+  "author": "Nathan Ben-David",
+  "version": "0.0.0",
+  "main": "app.js",
+  "license": "ISC",
+  "scripts": {
+    "devstart": "nodemon app.js debug"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "~4.16.1",
+    "fast-xml-parser": "^4.0.9",
+    "fullcalendar": "^5.11.0",
+    "http-errors": "~1.6.3",
+    "ip": "^1.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

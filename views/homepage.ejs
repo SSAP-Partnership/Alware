@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alware - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Ben-David">
+    <meta name="description" content="The best way to schedule meetings since sliced bread.">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/stylesheets/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="/javascripts/homepage.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div class="logo">
+            <img src="images/logo_text.png" alt="">
+        </div>
+    </div>
+    <div id="hero">
+        <div class="welcome-text">
+            <h1>The Best Website Since Sliced Bread</h1>
+            <button id="createBtn">Create</button>
+            <button id="joinBtn">Join</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="col-1"><h3>USEFUL LINKS</h3></div>
+        <div class="col-1"><h3>ABOUT</h3></div>
+    </div>
+</div>
+
+<div id="createModal" class="modal hidden">
+    <span class="modalClose">&times;</span>
+    <form class="modalContent" onsubmit="return false;" autocomplete="off">
+        <h1>Create Room</h1>
+        <p>Please fill in this form to create a room.</p>
+        <hr>
+        <label for="code"><b>Room Code</b></label>
+        <input id="createCode" type="text" placeholder="Enter Room Code" name="code" required>
+
+        <label for="password"><b>Password</b></label>
+        <input id="createPassword" type="password" placeholder="Enter Password" name="password" required>
+
+        <label for="password2"><b>Repeat Password</b></label>
+        <input id="createPassword2" type="password" placeholder="Repeat Password" name="password2" required>
+
+        <div class="modalButtons">
+            <button type="button" class="modalCancel">Cancel</button>
+            <button id="createSubmit" type="submit" class="modalSubmit">Create</button>
+        </div>
+
+        <span id="createError"></span>
+    </form>
+</div>
+
+<div id="joinModal" class="modal hidden">
+    <span class="modalClose">&times;</span>
+    <form class="modalContent" onsubmit="return false;" autocomplete="off">
+        <h1>Join Room</h1>
+        <p>Please fill in this form to join a room.</p>
+        <hr>
+        <label for="code"><b>Room Code</b></label>
+        <input id="joinCode" type="text" placeholder="Enter Room Code" name="code" required>
+
+        <div class="modalButtons">
+            <button type="button" class="modalCancel">Cancel</button>
+            <button id="joinSubmit" type="submit" class="modalSubmit">Join</button>
+        </div>
+
+        <span id="joinError"></span>
+    </form>
+</div>
+</body>
+</html>

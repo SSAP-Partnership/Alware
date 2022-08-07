@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alware - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Ben-David">
+    <meta name="description" content="The best way to schedule meetings since sliced bread.">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script>
+
+        /*
+        * Function: Helper method for making a POST request.
+        * Input: The URL to post to and the data to post.
+        * Output: A promise that resolves to the response.
+        */
+
+        function post(url, data) {
+            return fetch(url, {
+                method: "POST",
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            });
+        }
+
+        window.onload = () => {
+            // Asks the user for a password to close the site.
+            const pass = prompt('Password:');
+
+            // Existence checks the password.
+            if (pass != null) {
+                // Posts the password
+                post('/admin/close',
+                    {pass: pass}
+                )
+                    .then(res => {
+                        return res.text();
+                    })
+                    .then(res => {
+                        // Displays the server's response.
+                        // Redirects to the home page.
+                        alert(res);
+                        window.location.href = '/';
+                    });
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

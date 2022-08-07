@@ -1,0 +1,260 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+#header {
+    background-color: black;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    margin-left: 19vw;
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+
+    pointer-events: none;
+}
+
+#hero {
+    background-color: #333;
+    background-size: 100vw;
+    background-attachment: fixed;
+
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+#submitForm {
+    background-color: #151515;
+    flex: 35%;
+    padding: 30px;
+}
+
+#submitForm * {
+    color: white;
+}
+
+#submitForm input[type=text], select, textarea {
+    border-radius: 4px;
+    resize: none;
+
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #494949;
+}
+
+#submitForm input[type=text]:focus, select:focus, textarea:focus {
+    background-color: #131313;
+    outline: none;
+}
+
+#submitForm label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#submitForm input[type=submit], #submitForm button {
+    background-color: #D94C2C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+
+    margin: 0 0 0 20px;
+    width: 160px;
+
+    opacity: 0.8;
+}
+
+#submitForm input[type=submit]:hover, #submitForm button:hover {
+    opacity: 1;
+}
+
+#submitForm .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+#submitForm .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+#submitForm .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#submitForm #resultBtn, #submitForm #shareBtn, #submitForm #homeBtn {
+    background-color: #730a01;
+}
+
+#timeSelector {
+    background-color: #111;
+    /*background-color: white;*/
+    flex: 65%;
+}
+
+#calendar {
+    width: 100%;
+    height: 100%;
+
+    color: white;
+}
+
+*:focus {
+    outline: 0 ! important;
+    box-shadow: none ! important;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    background-color: #00000088;
+
+    transition: all 0.1s ease-out;
+}
+
+.modal * {
+    color: white;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.05s ease-in-out;
+}
+
+.modalContent {
+    width: 40%;
+
+    margin: 5% auto auto auto;
+    padding: 25px;
+
+    background-color: #151515;
+    border: 1px solid #888;
+
+    display: block;
+}
+
+.modalClose {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.modalClose:hover, .modalClose:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 25px 0;
+}
+
+.modalContent input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #494949;
+}
+
+.modalContent input:focus {
+    background-color: #131313;
+    outline: none;
+}
+
+.modalContent button {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+
+    float: left;
+
+}
+
+.modalContent button:hover {
+    opacity: 1;
+}
+
+.modalContent #modalSubmit {
+    background-color: #D94C2C;
+    color: white;
+
+    width: 80%;
+}
+
+.modalContent #modalCancel {
+    background-color: #730a01;
+    color: white;
+
+    width: 20%;
+}
+
+.modalButtons::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#loginError {
+    color: #ff0000;
+    font-size: 16px;
+}
+
+#btnBarError {
+    margin-top: 15px;
+    float: right;
+    color: #00ff00;
+    font-size: 16px;
+}
