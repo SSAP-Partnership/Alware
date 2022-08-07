@@ -14,7 +14,7 @@ Node Package Manager: v8.16.0
 
 Main class: app.js
 
-# Dependencies
+# Dependencies (NPM)
 
 bcrypt v5.0.1
 
