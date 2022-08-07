@@ -6,13 +6,13 @@ Author: Nathan Ben-David
 
 Version: 1.0.0
 
-Main class: app.js
-
 # Setup
 
 Node JS: v17.6.0
 
 Node Package Manager: v8.16.0
+
+Main class: app.js
 
 # Dependencies
 
