@@ -2,7 +2,7 @@
   "name": "alware",
   "description": "The future of meeting scheduling (not malware)",
   "author": "Nathan Ben-David",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "app.js",
   "license": "ISC",
   "scripts": {
